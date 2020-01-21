@@ -1,0 +1,58 @@
+<html>
+    <head>
+    
+    
+    
+    </head>
+    
+    <body>
+        <h3>design a page with two input types as text and button  which adds the data to your html page so input by the user onclick</h3>
+        <input type="text" id="txt">
+        <input type="button" id="btn" value="click me">
+        
+        
+    
+    <script>
+        var e=document.getElementById('txt')
+    
+        var f=document.getElementById('btn')
+        
+        f.addEventListener('click',function(){
+            //alert("--- YOU CLICKED THE BUTTON  ---")
+            var para=document.createElement('p')
+            para.textContent=e.value;
+            console.log(e.value)
+            document.body.appendChild(para)
+            
+        }) 
+        
+        /*var e= document.createElement('div')
+        console.log(e)
+        
+         var f= document.createElement('div')
+        console.log(f)
+        var g= document.createElement('div')
+        console.log(g)
+        var a=document.createElement('p')
+        console.log(a)
+         var b=document.createElement('p')
+        console.log(b)
+        var b1=document.createElement('p')
+        console.log(b1)
+         var c=document.createElement('p')
+        console.log(c)
+        e.appendChild(a)
+        f.appendChild(b)
+        f.appendChild(b1)
+        g.appendChild(c)
+        document.body.appendChild(e)
+        document.body.appendChild(f)
+        document.body.appendChild(g)*/
+        
+        
+        
+        
+        
+    </script>
+    </body>
+</html>
